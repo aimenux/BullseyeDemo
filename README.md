@@ -1,6 +1,5 @@
 ![.NET Core](https://github.com/aimenux/BullseyeDemo/workflows/.NET%20Core/badge.svg)
 # BullseyeDemo
-Demo of using Bullseye
 ```
 Using Bullseye to simulate api lifecycle management tasks
 ```
