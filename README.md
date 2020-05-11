@@ -8,8 +8,11 @@ In this demo, i m using [Bullseye](https://github.com/adamralph/bullseye/) to si
 
 > How to run ?
 >> `Show help :` App.exe -h
+>
 >> `Show targets :` App.exe -l
+>
 >> `Run all targets :` App.exe
+>
 >> `Run create target :` App.exe Create
 
 **`Tools`** : vs19, net core 3.1
