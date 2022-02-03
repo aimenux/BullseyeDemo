@@ -17,14 +17,4 @@ public static class Program
         Console.WriteLine("Press any key to exit !");
         Console.ReadKey();
     }
-
-    public enum TargetTypes
-    {
-        Create,
-        Deploy,
-        Start,
-        Stop,
-        Destroy,
-        Default
-    }
 }
