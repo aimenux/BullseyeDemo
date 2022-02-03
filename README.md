@@ -1,4 +1,4 @@
-![.NET Core](https://github.com/aimenux/BullseyeDemo/workflows/.NET%205/badge.svg)
+[![.NET](https://github.com/aimenux/BullseyeDemo/actions/workflows/ci.yml/badge.svg)](https://github.com/aimenux/BullseyeDemo/actions/workflows/ci.yml)
 # BullseyeDemo
 ```
 Using Bullseye to simulate api lifecycle management tasks
