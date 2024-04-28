@@ -20,4 +20,4 @@ In this demo, i m using [Bullseye](https://github.com/adamralph/bullseye/) to si
 > ![DefaultTargetScreen](Screenshots/DefaultTargetScreen.png)
 >
 
-**`Tools`** : vs22, net 6.0
+**`Tools`** : net 8.0, bullseye

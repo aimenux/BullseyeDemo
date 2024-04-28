@@ -1,11 +1,10 @@
 ﻿using Bullseye;
-using AppHost = Microsoft.Extensions.Hosting.Host;
 
 namespace AppTwo;
 
 public static class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
         var targets = new Targets();
         targets.Add(nameof(TargetTypes.Create), () => Console.WriteLine("Create infrastructure"));
@@ -14,7 +13,7 @@ public static class Program
         targets.Add(nameof(TargetTypes.Stop), new[] { nameof(TargetTypes.Start) }, () => Console.WriteLine("Stop web api"));
         targets.Add(nameof(TargetTypes.Destroy), new[] { nameof(TargetTypes.Stop) }, () => Console.WriteLine("Destroy infrastructure"));
         targets.Add(nameof(TargetTypes.Default), new[] { nameof(TargetTypes.Create), nameof(TargetTypes.Destroy) });
-        targets.RunWithoutExiting(args);
+        await targets.RunAndExitAsync(args);
         Console.WriteLine("Press any key to exit !");
         Console.ReadKey();
     }
